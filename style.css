@@ -4,8 +4,6 @@
     line-height: 24px;
     color: black;
     background-color: white;
-    overflow-x: hidden;
-    margin: 0;
 
     box-sizing: border-box;
     padding: 0;
@@ -19,10 +17,12 @@
 }
 
 .interface-container {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  height: 650px;
+  height: 100%;
   width: 100%;
+  margin: 0;
 
   background: url(background.jpg) no-repeat;
   background-size: 600px 100%;
@@ -32,7 +32,7 @@
 .interface-container_container-item {
   display: flex;
   flex-direction: column;
-  height: 270px;
+  height: 40%;
   width: 35%;
   margin: auto auto auto 7%;
 
@@ -123,11 +123,10 @@
 @media (max-width: 768px) {
   .interface-container {
     flex-direction: column;
-    height: 640px;
   }
 
   .interface-container_container-item {
-    height: 250px;
+    height: 40%;
     width: 90%;
     margin: auto;
   }
