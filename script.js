@@ -146,11 +146,25 @@ let outputBox = container.querySelector('.JS-output');
 let doButton = container.querySelector('.JS-encrypt-button');
 let undoButton = container.querySelector('.JS-excrypt-button');
 
+let toClipboard = function(message) {
+  let messageContainer = document.createElement('textarea');
+  messageContainer.value = message;
+  messageContainer.setAttribute('readonly', '');
+  messageContainer.style.position = 'absolute';
+  messageContainer.style.left = '-9999px';
+
+  document.body.appendChild(messageContainer);
+  messageContainer.select();
+  document.execCommand('copy');
+  document.body.removeChild(messageContainer);
+};
+
 doButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   let toEncrypt = inputBox.value;
-  navigator.clipboard.writeText(encryptor(toEncrypt));
-  alert(encryptor(toEncrypt) + '\r\n\r\nТекст зашифрованного сообщения скопирован в буфер обмена.');
+  let encryptedMessage = encryptor(toEncrypt);
+  toClipboard(encryptedMessage);
+  alert('\r\n\r\nВаше сообщение зашифровано и скопирован в буфер обмена.\r\n\r\n' + 'Текст зашифровного сообщения: ' + encryptedMessage);
   inputBox.value = '';
 });
 
