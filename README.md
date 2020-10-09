@@ -2,7 +2,7 @@
 
 I made this script to practice my JS.
 
-It has no practical use due to methods of encryption are classical ciphers that are no longer in use by the modern cryptography. 
+It has no practical use, the methods of encryption are classical ciphers that are no longer in use by the modern cryptography. 
 
 But it still can be used for having fun, while chating with your friends!
 
