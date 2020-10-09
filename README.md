@@ -1,6 +1,6 @@
 # messageEncryptor
 
-I made this script to practice my JS.
+It is just my sandbox to practice JS. 
 
 It has no practical use, the methods of encryption are classical ciphers that are no longer in use by the modern cryptography. 
 
