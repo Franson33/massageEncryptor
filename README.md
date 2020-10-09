@@ -10,7 +10,7 @@ Two encryption methods are used:
 
 - first one is a permutation using a "magic square";
 
-- the second one is the "Caesar's" cipher, substitution with letter shift to the Latin alphabet.
+- the second one is the "Caesar's" cipher, substitution but with letter shift to the Latin alphabet.
 
 
 I put five static "magic squares" to the code and use one of them randomly, according to the key. A much better way is to generate a new "magic square" at every iteration.
