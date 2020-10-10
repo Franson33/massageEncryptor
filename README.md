@@ -1,8 +1,6 @@
-# messageEncryptor
-
-It is just my sandbox to practice JS. 
-
+# messageEncryptor 
 It has no practical use, the methods of encryption are classical ciphers that are no longer in use by the modern cryptography. 
+It is just my sandbox to practice JS.
 
 But it still can be used for having fun, while chating with your friends!
 
@@ -23,3 +21,5 @@ A much safer way is to send it separately, but this script has no purpose to be 
 After the message is encrypted, it goes to the 
 clipboard, and is ready to be sent.
 
+
+P.S. This code do looks ugly and unreadable for me now, the functions way to bigger than they should be!))  
